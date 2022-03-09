@@ -1,20 +1,20 @@
 
 from flask import Flask, request, jsonify, render_template
 import pickle
-# import sklearn
+import sklearn
 from flask_cors import CORS 
 from sklearn.feature_extraction.text import CountVectorizer, TfidfTransformer
-# from textblob import TextBlob
+from textblob import TextBlob
 
-# import re
-# import string
-# import nltk
-# from nltk import tokenize
-# from nltk.corpus import stopwords
-# from nltk.tokenize import word_tokenize 
-# from operator import itemgetter
-# import math
-# stop_words = set(stopwords.words('english'))
+import re
+import string
+import nltk
+from nltk import tokenize
+from nltk.corpus import stopwords
+from nltk.tokenize import word_tokenize 
+from operator import itemgetter
+import math
+stop_words = set(stopwords.words('english'))
 
 app = Flask(__name__)
 CORS(app)
