@@ -4,7 +4,7 @@ import pickle
 import sklearn
 from flask_cors import CORS 
 from sklearn.feature_extraction.text import CountVectorizer, TfidfTransformer
-from textblob import TextBlob
+# from textblob import TextBlob
 
 import re
 import string
@@ -119,7 +119,8 @@ def predict():
 if __name__ == "__main__":
     app.run(debug=True)
 
-
+import nltk
+nltk.download()
 
 
 
